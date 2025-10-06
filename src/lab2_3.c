@@ -14,7 +14,7 @@
 
 int is_prime(int n) {
   // Put n/2 instead of sqrt(n), because sqrt(n) won't work
-  for (int i = 2; i <= n / 2; ++i) {
+  for (int i = 2; i <= sqrt(n); ++i) {
     if (n % i == 0) {
       return 0;
     }
