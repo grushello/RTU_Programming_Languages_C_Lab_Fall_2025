@@ -34,8 +34,6 @@ int main(void) {
     return 0;
 }
 
-// TODO: Implement save_student()
-// Open file for writing, check errors, write fields, then close file
 void save_student(Student s, const char *filename) {
     FILE* fp = fopen(filename, "w");
     if(fp == NULL)
